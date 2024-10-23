@@ -14,10 +14,11 @@ remainingAmount5, remainingAmount1;
 
 printf("Enter a dollar amount: ");
 scanf("%i", &amount);
+printf("\n");
 
 amountNeeded20 = amount / 20;  // For instance 93 / 20 = 4.65 or 4 // or $10 left because 20 x 4 = 80, and 90 - 80 is $10
 remainingAmount20 = amount - (amountNeeded20 * 20); // gives $13 left
-printf("$20 bills: %i\n", amountNeeded20);  // prints out 4 $20 bills
+printf("$20 bills: %i\n", amountNeeded20); // prints out 4 $20 bills
 
 amountNeeded10 = remainingAmount20 / 10;  // Gives 13 / 10, which is 1.3, rounds down to 1
 remainingAmount10 = remainingAmount20 - (amountNeeded10 * 10); // gives $3 left
