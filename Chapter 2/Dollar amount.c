@@ -11,7 +11,7 @@ int main(void)
 
 int amount, amountNeeded20, amountNeeded10, amountNeeded5, amountNeeded1, remainingAmount20, remainingAmount10,
 remainingAmount5, remainingAmount1;
-
+      
 printf("Enter a dollar amount: ");
 scanf("%i", &amount);
 printf("\n");
