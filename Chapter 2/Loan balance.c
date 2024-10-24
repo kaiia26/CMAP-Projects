@@ -29,19 +29,6 @@ decreaseBalance = balance - monthlyPayment;   // balance is decreased by the use
 increaseBalance = balance * monthlyInterestRate;     // balance is increased by the monthly interest rate   
 
 
-firstPayment = balance - (decreaseBalance * increaseBalance); //1. firstPayment is computed from user's balance minus decreaseBalance
-
-decreaseBalance1 = firstPayment;  //2. how to update decreaseBalance each time it is calculated? By storing it in a new variable!
-
-decreaseBalance2 = decreaseBalance1; //3. decreaseBalance2 is assigned the value of decreaseBalance1, and it inherits it
-
-secondPayment = firstPayment - decreaseBalance2;  //4. secondPayment is firstPayment minus decreaseBalance2, the result we got from 1.
-
-decreaseBalance2 = secondPayment;  //5. decreasevalue2 is assigned a new value and is updated to the calculated value from 4.
-
-decreaseBalance3 = decreaseBalance2;  //6. decreasebalance3 is assigned the updated value of decreasebalance2 from 5.
-
-thirdPayment = secondPayment - decreaseBalance3;  //thirdpayment is calculated from the updated value of decreasebalance3
 
 printf("Balance remaining after the first payment: %.2f\n", firstPayment);
 printf("Balance remaining after the second payment: %.2f\n", secondPayment);
