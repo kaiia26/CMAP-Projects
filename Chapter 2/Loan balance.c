@@ -25,8 +25,8 @@ printf("Enter monthly payment: ");
 scanf("%f", &monthlyPayment);       
 printf("\n");
 
-monthlyInterestRate = interestRate / 12.0;     // interest rate is divided by 12 months to calculate monthly
-balance = loan;                                // balance is the loan that the user took out
+monthlyInterestRate = interestRate / 12.0;     // interest rate is divided by 12 months to calculate the monthly interest rate
+balance = loan;                                // Intitial balance is set to the loan amount
 
 // First Payment calculation
 balance = balance + (balance * monthlyInterestRate);     
