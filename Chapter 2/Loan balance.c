@@ -8,8 +8,7 @@
 int main(void)
 {
 
-float loan, balance, interestRate, monthlyInterestRate, monthlyPayment, firstPayment, secondPayment, thirdPayment;  
-
+float loan, balance, interestRate, monthlyInterestRate, monthlyPayment;
 // user enters loan amount and stores it in loan variable
 printf("Enter the amount of loan: ");   
 scanf("%f", &loan );                    
@@ -25,26 +24,20 @@ printf("Enter monthly payment: ");
 scanf("%f", &monthlyPayment);       
 printf("\n");
 
-monthlyInterestRate = interestRate / 12.0;     // interest rate is divided by 12 months to calculate the monthly interest rate
+monthlyInterestRate = interestRate / 100.0 / 12.0;     // interest rate is divided by 12 months to calculate the monthly interest rate
 balance = loan;                                // Intitial balance is set to the loan amount
 
-// First Payment calculation
-balance = balance + (balance * monthlyInterestRate);     
-balance = balance - monthlyPayment;                      
-firstPayment = balance;                                 
-printf("Balance remaining after the first payment: $%.2f\n", firstPayment);
+// First Payment calculation  
+balance = balance - monthlyPayment + balance * monthlyInterestRate;                                                     
+printf("Balance remaining after the first payment: $%.2f\n", balance);
 
 // Second Payment calculation
-balance = firstPayment + (firstPayment * monthlyInterestRate);  
-balance = firstPayment - monthlyPayment; 
-secondPayment = balance;                 
-printf("Balance remaining after the second payment: $%.2f\n", secondPayment);
+balance = balance - monthlyPayment + balance * monthlyInterestRate;   
+printf("Balance remaining after the second payment: $%.2f\n", balance);
 
-// Third payment calculation
-balance = secondPayment + (secondPayment * monthlyInterestRate); 
-balance = secondPayment - monthlyPayment; 
-thirdPayment = balance;                   
-printf("Balance remaining after the third payment: $%.2f\n", thirdPayment);
+// Third payment calculation 
+balance = balance - monthlyPayment + balance * monthlyInterestRate;               
+printf("Balance remaining after the third payment: $%.2f\n", balance);
 
 
     return 0;
