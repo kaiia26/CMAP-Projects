@@ -20,4 +20,17 @@ printf("Enter purchase date (mm/dd/yyyy): ");
 scanf("%d/%d/%d", &month, &day, &year );
 
 
+printf("Item\t\t Unit\t\t Purchase");         // tabs for formatting
+printf("\t\tPrice\t\t Date");               // tabs for formatting
+printf("%-10d", item_number);                //left-justifies item_number and adds spaces between item and unit price columns
+printf("$%2d");                            // right-justifies and adds space between $ symbol and the unit_price
+printf("%.2f", unit_price);              // specifies float format specifier for unit price to be counted as two decimals
+printf("%-5d");                            // left-justifies to add space between unit_price and purchase_date columns
+
+
+
+
+
+
+return 0;
 }
