@@ -22,11 +22,10 @@ scanf("%d/%d/%d", &month, &day, &year );
 
 printf("\n");
 printf("Item\t\tUnit\t\tPurchase\n\t\tPrice\t\tDate");
-printf("%-10d", item_number);                
-printf("$%2d");                           
-printf("%4.2f", unit_price);              
-printf("%-5d");                            
-printf("%0d/%0d/%d", month, day, year);
+printf("\n");
+printf("%-10d", item_number);                                          
+printf("\t$%6.2f", unit_price);                                         
+printf("\t\t%0d/%0d/%d", month, day, year);
 
 
 return 0;
