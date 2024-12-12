@@ -21,7 +21,7 @@ scanf("%d/%d/%d", &month, &day, &year );
 
 
 printf("\n");
-printf("Item\t\tUnit\t\tPurchase\n\t\t\tPrice\t\tDate");
+printf("Item\t\tUnit\t\tPurchase\n\t\tPrice\t\tDate");
 printf("%-10d", item_number);                
 printf("$%2d");                           
 printf("%4.2f", unit_price);              
