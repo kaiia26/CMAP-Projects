@@ -6,4 +6,3 @@ This my repository for practice projects from **"C Programming: A Modern Approac
 
 - **Chapters**: Each chapter has its own directory.
 - **Source Code**: My solutions to the book's projects.
-- **Notes**: Insights and learning points.
