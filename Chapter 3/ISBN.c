@@ -13,14 +13,14 @@ int main(void)
 int GS1, group_identifier, pub_code, item_num, check_digit;
 
 printf("Enter ISBN: ");
-scanf("%3d-%5d-%7d-%6d-%1d", &GS1, &group_identifier, &pub_code, &item_num, &check_digit);
+scanf("%3d-%d-%d-%d-%1d", &GS1, &group_identifier, &pub_code, &item_num, &check_digit);
 printf("GS1 prefix: %3d ", GS1); // set number
 printf("\n");
-printf("Group identifier: %5d ", group_identifier);
+printf("Group identifier: %d ", group_identifier);
 printf("\n");
-printf("Publisher code: %7d ", pub_code);
+printf("Publisher code: %d ", pub_code);
 printf("\n");
-printf("Item number: %6d ", item_num);
+printf("Item number: %d ", item_num);
 printf("\n");
 printf("Check digit: %1d", check_digit);
 
