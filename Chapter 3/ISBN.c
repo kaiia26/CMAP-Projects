@@ -14,7 +14,7 @@ int GS1, group_identifier, pub_code, item_num, check_digit;
 
 printf("Enter ISBN: ");
 scanf("%3d-%d-%d-%d-%1d", &GS1, &group_identifier, &pub_code, &item_num, &check_digit);
-printf("GS1 prefix: %3d ", GS1); // set number
+printf("GS1 prefix: %3d ", GS1); // set number, always three digits long
 printf("\n");
 printf("Group identifier: %d ", group_identifier);
 printf("\n");
@@ -22,7 +22,7 @@ printf("Publisher code: %d ", pub_code);
 printf("\n");
 printf("Item number: %d ", item_num);
 printf("\n");
-printf("Check digit: %1d", check_digit);
+printf("Check digit: %1d", check_digit);  // set number, always a singular digit long
 
 
 return 0;
