@@ -11,7 +11,7 @@ int area_code, prefix, line_number;
 printf("Enter phone number [ (xxx) xxx-xxxx]: ");
 scanf("(%3d) %3d-%4d", &area_code, &prefix, &line_number);
 
-printf("You entered %3d.%3d.%4d", area_code, prefix, line_number);
+printf("You entered %03d.%03d.%04d", area_code, prefix, line_number); // zero padding in case phone number is less than specified width
 
 
 
