@@ -16,25 +16,25 @@ scanf("%d %d %d %d %d %d %d %d %d %d %d %d %d %d %d %d",
 &num1, &num2, &num3, &num4, &num5, &num6, &num7, &num8, &num9, &num10, &num11, &num12, &num13, &num14, &num15, &num16);
 
 printf("\n");
-printf("%d\t%d\t%d\t%d", num1, num2, num3, num4);
+printf("%d\t %d\t %d\t%d", num1, num2, num3, num4);
 printf("\n");
-printf("%d\t%d\t%d\t%d", num5, num6, num7, num8);
+printf("% d\t%d\t%d\t %d", num5, num6, num7, num8);
 printf("\n");
-printf("%d\t%d\t%d\t%d", num9, num10, num11, num12);
+printf("% d\t %d\t %d\t%d", num9, num10, num11, num12);
 printf("\n");
-printf("%d\t%d\t%d\t%d", num13, num14, num15, num16);
+printf("% d\t%d\t%d\t %d", num13, num14, num15, num16);
 
 row_1 = num1 + num2 + num3 + num4;
-row_2 = num5 + num6 + num7 + num8;
-row_3 = num9 + num10 + num11 + num12;
+row_2 = num5 + num6 + num7 + num8;          // all rows
+row_3 = num9 + num10 + num11 + num12; 
 row_4 = num13 + num14 + num15 + num16;
 
 column_1 = num1 + num5 + num9 + num13;
-column_2 = num2 + num6 + num10 + num14;
+column_2 = num2 + num6 + num10 + num14;     // all columns
 column_3 = num3 + num7 + num11 + num15;
 column_4 = num4 + num8 + num12 + num16;
 
-diagonal_1 = num4 + num7 + num10 + num13;
+diagonal_1 = num4 + num7 + num10 + num13;    // all diagonals
 diagonal_2 = num1 + num6 + num11 + num16;
 
 printf("\n\n");
