@@ -8,7 +8,7 @@ int main(void)
 {
 
 int num1, num2, num3, num4, num5, num6, num7, num8, num9, num10, num11, num12, num13, num14, num15, num16;
-int row_1, row_2, row_3, row_4, column_1, column_2, column_3, column_4, diagonal_1, diagonal_2;
+int row_1, row_2, row_3, row_4, row_sums, column_1, column_2, column_3, column_4, column_sums, diagonal_1, diagonal_2, diagonal_sums;
 
 
 printf("Enter the numbers from 1 to 16 in any order: ");
@@ -23,6 +23,20 @@ printf("\n");
 printf("%d\t%d\t%d\t%d", num9, num10, num11, num12);
 printf("\n");
 printf("%d\t%d\t%d\t%d", num13, num14, num15, num16);
+
+row_1 = num1 + num2 + num3 + num4;
+row_2 = num5 + num6 + num7 + num8;
+row_3 = num9 + num10 + num11 + num12;
+row_4 = num13 + num14 + num15 + num16;
+row_sums = row_1 + row_2 + row_3 + row_4; // sums of all rows
+
+column_1 = num1 + num5 + num9 + num13;
+column_2 = num2 + num6 + num10 + num14;
+column_3 = num3 + num7 + num11 + num15;
+column_4 = num4 + num8 + num12 + num16;
+column_sums = column_1 + column_2 + column_3 + column_4;  // sums of all columns
+
+
 
 printf("Row sums: %d %d %d %d", row_1, row_2, row_3, row_4);
 
