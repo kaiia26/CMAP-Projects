@@ -37,7 +37,7 @@ column_4 = num4 + num8 + num12 + num16;
 diagonal_1 = num4 + num7 + num10 + num13;
 diagonal_2 = num1 + num6 + num11 + num16;
 
-printf("\n");
+printf("\n\n");
 printf("Row sums: %d %d %d %d", row_1, row_2, row_3, row_4);
 printf("\n");
 printf("Column sums: %d %d %d %d", column_1, column_2, column_3, column_4);
