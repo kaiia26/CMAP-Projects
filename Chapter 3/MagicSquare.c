@@ -28,18 +28,19 @@ row_1 = num1 + num2 + num3 + num4;
 row_2 = num5 + num6 + num7 + num8;
 row_3 = num9 + num10 + num11 + num12;
 row_4 = num13 + num14 + num15 + num16;
-row_sums = row_1 + row_2 + row_3 + row_4; // sums of all rows
 
 column_1 = num1 + num5 + num9 + num13;
 column_2 = num2 + num6 + num10 + num14;
 column_3 = num3 + num7 + num11 + num15;
 column_4 = num4 + num8 + num12 + num16;
-column_sums = column_1 + column_2 + column_3 + column_4;  // sums of all columns
 
+diagonal_1 = num4 + num7 + num10 + num13;
+diagonal_2 = num1 + num6 + num11 + num16;
 
-
+printf("\n")
 printf("Row sums: %d %d %d %d", row_1, row_2, row_3, row_4);
-
+printf("Column sums: %d %d %d %d", column_1, column_2, column_3, column_4);
+printf("Diagonal sums: %d %d", diagonal_1, diagonal_2);
 
 
 return 0;
