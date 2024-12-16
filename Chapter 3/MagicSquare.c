@@ -39,7 +39,9 @@ diagonal_2 = num1 + num6 + num11 + num16;
 
 printf("\n");
 printf("Row sums: %d %d %d %d", row_1, row_2, row_3, row_4);
+printf("\n");
 printf("Column sums: %d %d %d %d", column_1, column_2, column_3, column_4);
+printf("\n");
 printf("Diagonal sums: %d %d", diagonal_1, diagonal_2);
 
 
