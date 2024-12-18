@@ -27,12 +27,33 @@
 // Answer: (-i) /j does not always have the same value as -(i/j) because if either operand is negative, 
 // the result can be rounded either up or down. (For example, the value of -9 / 7 could be either -1 or -2).
 
+// 3. What is the value of each of the following expressions in C89? (Give all the possible values if an expression may have more than one)
+
+// (a) 8 / 5 = 1
+// (b) -8 / 5 = -1 OR -2
+// (c) 8 / -5 = -1 OR -2
+// (d) -8 / -5 = 1 OR 2
+
+// 4. Repeat Exercise 3 for C99
+
+// (a) 8 / 5 = 1
+// (b) -8 / 5 = -1
+// (c) 8 / -5 = -1
+// (d) -8 / -5 = 1
 
 
-// 4. What is the value of each of the following expressions in C89? (Give all the possible values if an expression may have more than one)
+// 5. What is the value of each of the following expressions in C89? (Give all the possible values if an expression may have more than one)
 
-// (a) 8 % 5 = 1 * 5 = 8 - 5 = 3
-// (b) -8 % 5 = -8 - (5 * -1) = -8 + 5 = 3; OR; -8 - (5 * -2) = -8 - (-10) = -8 + 10 = 2
-// (c) 8 % -5 = 8 - (-5 * -1) = 8 - 5 = 3; OR; 8 - (-5 * -2) = 8 - 10 = -8
-// (d) -8 % -5 = -8 - (-5 * 1) = -8 + 5 = -3; OR; -8 -(-5 * 2) = -8 - (-10) = -8 + 10 = 2
+// (a) 8 % 5 = 1 * 5 = 8 - 5 = 3  >> only 3
+// (b) -8 % 5 = -8 - (5 * -1) = -8 + 5 = 3; OR; -8 - (5 * -2) = -8 - (-10) = -8 + 10 = 2  >> either 3 or 2
+// (c) 8 % -5 = 8 - (-5 * -1) = 8 - 5 = 3; OR; 8 - (-5 * -2) = 8 - 10 = -8   >> either 3 or -8
+// (d) -8 % -5 = -8 - (-5 * 1) = -8 + 5 = -3; OR; -8 -(-5 * 2) = -8 - (-10) = -8 + 10 = 2   >> either -3 or 2
+
+// 6. Repeat Exercise 5 for C99
+
+// (a) 8 % 5 = 1 * 5 = 8 - 5 = 3  >> only 3
+// (b) -8 % 5 = -8 - (5 * -1) = -8 + 5 = 3; OR; -8 - (5 * -2) = -8 - (-10) = -8 + 10 = 2  >> either 3 or 2
+// (c) 8 % -5 = 8 - (-5 * -1) = 8 - 5 = 3; OR; 8 - (-5 * -2) = 8 - 10 = -8   >> either 3 or -8
+// (d) -8 % -5 = -8 - (-5 * 1) = -8 + 5 = -3; OR; -8 -(-5 * 2) = -8 - (-10) = -8 + 10 = 2   >> either -3 or 2
+
 
