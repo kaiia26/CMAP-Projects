@@ -45,15 +45,15 @@
 // 5. What is the value of each of the following expressions in C89? (Give all the possible values if an expression may have more than one)
 
 // (a) 8 % 5 = 1 * 5 = 8 - 5 = 3  >> only 3
-// (b) -8 % 5 = -8 - (5 * -1) = -8 + 5 = 3; OR; -8 - (5 * -2) = -8 - (-10) = -8 + 10 = 2  >> either 3 or 2
+// (b) -8 % 5 = -8 - (5 * -1) = -8 + 5 = -3; OR; -8 - (5 * -2) = -8 - (-10) = -8 + 10 = 2  >> either -3 or 2
 // (c) 8 % -5 = 8 - (-5 * -1) = 8 - 5 = 3; OR; 8 - (-5 * -2) = 8 - 10 = -8   >> either 3 or -8
 // (d) -8 % -5 = -8 - (-5 * 1) = -8 + 5 = -3; OR; -8 -(-5 * 2) = -8 - (-10) = -8 + 10 = 2   >> either -3 or 2
 
 // 6. Repeat Exercise 5 for C99
 
-// (a) 8 % 5 = 1 * 5 = 8 - 5 = 3  >> only 3
-// (b) -8 % 5 = -8 - (5 * -1) = -8 + 5 = 3; OR; -8 - (5 * -2) = -8 - (-10) = -8 + 10 = 2  >> either 3 or 2
-// (c) 8 % -5 = 8 - (-5 * -1) = 8 - 5 = 3; OR; 8 - (-5 * -2) = 8 - 10 = -8   >> either 3 or -8
-// (d) -8 % -5 = -8 - (-5 * 1) = -8 + 5 = -3; OR; -8 -(-5 * 2) = -8 - (-10) = -8 + 10 = 2   >> either -3 or 2
+// (a) 8 % 5 = 2
+// (b) -8 % 5 = -3        >> value of i % j has the same sign as i
+// (c) 8 % -5 = 3
+// (d) -8 % -5 = -3
 
 
