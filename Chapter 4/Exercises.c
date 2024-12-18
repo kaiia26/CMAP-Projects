@@ -22,3 +22,14 @@
 // Answer: (1 + 5) % (2 + 2) / 3; 6 % 4 / 3 (left associativity); 6 % 4 = 1 * 4 = 6 - 4 = 2; 2 / 3 = 0 (result is trunctuated towards zero)
 
 
+
+// 2. If i and j are positive integers, does (-i) /j always have the same value as -(i/j)? Justify your answer.
+// Answer: (-i) /j does not always have the same value as -(i/j) because if either operand is negative, 
+// the result can be rounded either up or down. (For example, the value of -9 / 7 could be either -1 or -2).
+
+
+
+// 3. What is the value of each of the following expressions in C89? (Give all the possible values if an expression may have more than one)
+
+
+
