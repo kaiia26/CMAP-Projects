@@ -29,7 +29,10 @@
 
 
 
-// 3. What is the value of each of the following expressions in C89? (Give all the possible values if an expression may have more than one)
+// 4. What is the value of each of the following expressions in C89? (Give all the possible values if an expression may have more than one)
 
-
+// (a) 8 % 5 = 1 * 5 = 8 - 5 = 3
+// (b) -8 % 5 = -8 - (5 * -1) = -8 + 5 = 3; OR; -8 - (5 * -2) = -8 - (-10) = -8 + 10 = 2
+// (c) 8 % -5 = 8 - (-5 * -1) = 8 - 5 = 3; OR; 8 - (-5 * -2) = 8 - 10 = -8
+// (d) -8 % -5 = -8 - (-5 * 1) = -8 + 5 = -3; OR; -8 -(-5 * 2) = -8 - (-10) = -8 + 10 = 2
 
