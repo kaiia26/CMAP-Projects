@@ -114,6 +114,53 @@ int main(void)
 // Explanation 2: 52 - 1 = 51; 51 % 10 = 5 * 10 = 51 - 50 = 1; 9 - 1 = 8 (Using the expression 9 - ((total -  1) % 10))
 
 
+// 9. Show the output produced by each of the following program fragments. Assume that i, j, and k are int variables.
+
+// (a) i = 7; j = 8;
+// i *= j + 1;
+// printf("%d %d", i, j);
+
+// Answer: 63 8
+// i *= 8 + 1; i *= 9 * 7 = 63 for i
+// 8 for j
+
+// (b) i = j = k = 1;
+// i += j += k;
+// printf("%d %d %d", i, j, k);
+
+// Answer: 3 2 1
+// rewrite expression as i += (j += k);
+// k = 1
+// compute: i += (j = j + k); (rewrite for clarity)
+// compute: i += (j = 1 + 1); j = 2;
+// compute: i += 2
+// result: i = 3;
+// so i is 3, j is 2, and k is 1
+
+// (c) i = 1; j = 2; k = 3;
+// i -= j -= k;
+// printf("%d %d %d", i, j, k);
+
+// Answer: 2 -1 3
+// rewrite expression as i-= (j -= k);
+// compute: i -= (j = j - k); (rewrite for clarity)
+// compute: i -= (j = 2 - 3); j = -1
+// compute i = 1 - (-1); i = 2
+// so i is 2, j is -1 and k is 3
+
+// (d) i = 2; j = 1, k = 0;
+// i *= j *= k;
+// printf("%d %d %d", i, j, k);
+
+// Answer: 0 0 0
+// rewrite expression as i *= (j *= k) ;
+// compute: i *= (j = j * k); (rewrite for clarity)
+// compute: i *= (j = 1 * 0); j = 0
+// compute: i = i * 0; i = 0
+// so i, j, k are 0
+
+
+
 
 
 
