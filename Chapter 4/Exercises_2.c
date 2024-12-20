@@ -41,4 +41,37 @@
 
 
 
+// 11. Show the output produced by each of the following program fragments. Assume that i, j, and k are int variables.
+
+// (a) i = 1;
+// printf("%d ", i++ - 1);
+// printf("%d", i);
+
+// Answer 1: prints 0 (1 - 1 = 0)
+// Answer 2: prints 0
+
+// (b) i = 10; j = 5;
+// printf("%d ", i++ - ++j);
+// printf("%d %d", i, j);
+
+// Answer 1: prints 4 (10 - 6 = 4)
+// Answer 2: i is 11, j is 6
+
+// (c) i = 7; j = 8;
+// printf("%d ", i++ - --j);
+// printf("%d %d", i, j);
+
+// Answer 1: prints out 0 (7 - 7 = 0)
+// Answer 2: i is 8 j is 7
+
+// (d) i = 3; j = 4; k = 5;
+// printf("%d ", i++ - j++ + --k);
+// printf("%d %d %d", i, j, k);
+
+// Answer 1: prints out 5 (3 - 4 + 4 = 3) (left associativity)
+// Answer 2: i is 4, j is 5, and k is 4
+
+
+
+
 
