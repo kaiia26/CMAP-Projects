@@ -113,6 +113,7 @@
 
 
 
+
 // 14. Supply parenthesis to show how a C compiler would interpret each of the following expressions/
 
 // (a) (((a * b) - (c * d)) + e)
@@ -123,6 +124,33 @@
 
 // (d) ((a * (- b)) / (c - d))
 
+
+
+// 15. Give the values of i and j after each of the following expression statements has been executed. (Assume that i has the value of 1
+// initially and j has the value of 2)
+
+// (a) i += j;
+
+// Answer: Can be broken down into i = i + j, with i = 1 + 2. 
+// i = 3 and j = 2
+
+
+// (b) i--;
+
+// Answer: i = 2, j = 2 (no changes to j)
+
+
+// (c) i * j / i;
+
+// Can be pieced together as 2 * 2 / 2. Taking precedence into account, 2 * 2 is evaluated first and then result is / by 2
+// So, 4 / 2 = 2
+// Answer: But since it doesn't store a value, i and j remain as 2
+
+
+// (d)  i % ++j;
+
+// Calculation: 2 % 3; 3 * 0 = 0; 2 - 0 = 2
+// Answer: Since nothing is stored in i and j (because of no assignment operator), i = 2, j = 3
 
 
 
