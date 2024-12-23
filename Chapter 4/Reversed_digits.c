@@ -17,6 +17,5 @@ int main(void)
 
     printf("The reversal is:  %d%d", digit1, digit2);
 
-
     return 0;
 }

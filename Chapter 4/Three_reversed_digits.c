@@ -6,17 +6,18 @@ int main(void)
 
 {
 
-    int number, digit1, digit2, digit3, number_mod, number_div;
+    int number, digit1, digit2, digit3, number_mod, number_div1, number_div2;
     printf("Enter a three-digit number: ");
     scanf("%3d", &number);
 
-    number_mod = number % 10;
-    digit1 = number_mod;
-    number_div = number / 10;
-    digit2 = number_div;
-    digit3 = number_mod;
+// for 100
+    number_div1 = number / 10;
+    digit1 = number_div1 / 10; // gives 1
+    number_div2 = number_div1; // gives 10
+    digit2 = number_div2 % 10; // gives 0
+    digit3 = digit2; // gives 0
 
-    printf("The reversal is:  %d%d%d", digit1, digit3, digit2);
+    printf("The reversal is:  %1d%1d%1d", digit3, digit2, digit1);
 
 
     return 0;
