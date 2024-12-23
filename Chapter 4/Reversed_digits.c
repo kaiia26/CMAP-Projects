@@ -15,7 +15,7 @@ int main(void)
     number_div = number / 10;
     digit2 = number_div;
 
-    printf("The reversal is:  %d%d", digit1, digit2);
+    printf("The reversal is: %d%d", digit1, digit2);
 
     return 0;
 }
