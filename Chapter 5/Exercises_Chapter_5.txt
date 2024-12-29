@@ -31,7 +31,7 @@ and k are int variables. */
 // (d) i = 3; j = 4; k = 5;
 // printf("%d", i % j + i < k);
 
-// Calculation: ((i % j + i) < k; since % is higher precedence than + and <, but + is higher than <
+// Calculation: (i % j + i) < k; since % is higher precedence than + and <, but + is higher than <
 //  (3 % 4) = 0 * 4 = 3 - 0 = 3;
 // 3 + 3 = 6
 // 6 < 5; its false (0)
@@ -181,6 +181,15 @@ int main(void)
 // Answer: (1-10) evaluates to -9; the expression is now n == -9
 // If n is set to 5, 5 == -9 is false (0)
 // Since the condition is false, the printf statement isn't executed
+
+
+// 7. What does the following statement print if i has the value 17? What does print if i has the value -17?
+
+// printf("%d\n", i >= 0 ? i : -i);
+
+// Answer (if 17): (17 >= 0) is true, so it prints out i which is 17
+// Answer (if -17): (-17 >= 0) is false, so it prints out -(-17), which simplifies to 17
+
 
 
 
