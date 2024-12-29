@@ -1,0 +1,130 @@
+/* The following program fragments illustrate the relational and equality operators. Show the output produced by each, assuming that i, j,
+and k are int variables. */
+
+// (a) i = 2; j = 3;
+// k = i * j == 6;
+// printf("%d", k);
+
+// Calculation: i * j is 2 * 3 which equals 6, bc == has lower precedence than relational operators
+// 6 == 6 which is true
+// In binary, true is evaluated to 1
+// Answer: it prints k is 1.
+
+// (b) i = 5; j = 10; k = 1
+// printf("%d", k > 1 < j);
+
+// Calculation:  (k > 1) < j, since the > operators are left associative
+// First tests if k is greater than 1, and then the 1 or 0 produced is compared to j
+// (1 > 1) < 10; 1 is not greater than 1 so it produces 0 (false)
+// 0 < 10; 0 is less than 10 so it produces 1 (true)
+// Answer: it prints 1 
+
+// (c) i = 3; j = 2; k = 1
+// printf("%d", i < j == j < k)
+
+// Calculation: (i < j) == (j < k) since == is lower precedence than ><
+// True if (i < j) and (j < k) are both true or both false (both 0 or 1)
+// (3 < 2) is false (0); (2 < 1) is false (0)
+// so it evaluates to true (1)
+// Answer: it prints 1 
+
+// (d) i = 3; j = 4; k = 5;
+// printf("%d", i % j + i < k);
+
+// Calculation: ((i % j + i) < k; since % is higher precedence than + and <, but + is higher than <
+//  (3 % 4) = 0 * 4 = 3 - 0 = 3;
+// 3 + 3 = 6
+// 6 < 5; its false (0)
+// prints 0
+
+
+
+// 2. The following program fragments illustrate the logical operators. Show the output produced by each, assuming that i, j, and k are int
+// variables. 
+
+// (a) i = 10; j = 5;
+// printf("%d", !i < j)
+
+// Calculation: !i evaluates to false since i = 10 is true; !true is false or 0;
+// 0 < 5 evaluates to true or 1
+// Answer: prints out 1 
+
+// (b) i = 2; j = 1;
+// printf("%d", !!i + !j)
+
+// Calculation: !i evaluates to false, but the additional ! negates the false, so !!i evaluates to true (1)
+// !j evaluates to false(0)
+// 1(true) + 0(false) = 1(true)
+// Answer: prints out 1
+
+// (c) i = 5; j = 0; k = -5;
+// printf("%d", i && j || k);
+
+// Calculation: (i && j) || k
+// (5 && 0) evaluates to 0(false) since 5 and 0 aren't the same number
+// 0 || -5 evaluates to 1(true) since either have nonzero value
+// Answer: prints out 1
+
+// (d) i = 1; j = 2; k = 3
+// printf("%d", i < j || k)
+
+// Calculation: (i < j) || k
+// 1 < 2 evaluates to true(1)
+// 1 || 3 evaluates to 1(true) since either have nonzero value
+// Answer: prints out 1
+
+
+
+// 3. The following program fragments illustrate the short-circuit behavior of logical expressions. Show the output produced by each, 
+// assuming that i, j, and k are int variables
+
+// (a) i = 3; j = 4; k = 5;
+// printf("%d ", i < j || ++j < k);
+
+// Calculation: (i < j) || (++j < k)
+// (3 < 4) || (++j < k) ; (3 < 4) evaluates to true(1)
+// ++j is not executed due to short-circuiting, since 3 < 4 is true it means the entire expression is true
+// Answer: prints 1
+
+// (b) i = 7; j = 8; k = 9;
+// printf("%d ", i - 7 && j++ < k);
+// printf("%d %d %d", i, j, k);
+
+// Calculation: (i - 7) && (j++ < k)
+// (7 - 7) || (j++ < k) ; 7 - 7 evaluates to 0 (false)
+// j++ is not executed due to short-circuiting, since 7 - 7 is false it means the entire expression is false
+// Answer: prints out 0 
+// Answer: prints out 7 8 9
+
+// (c) i = 7; j = 8; k = 9;
+// printf("%d ", (i = j) || (j = k));
+// printf("%d %d %d", i, j, k);
+
+// Calculation: (i = j); i is assigned 8
+// (j = k) is not evaluated due to short-circuiting, so j and k are unchanged
+// Expression evaluates to 1(true)
+// Answer: prints out 1
+// Answer: prints out 8 8 9 
+
+// (d) i = 1; j = 1; k = 1;
+// printf("%d ", ++i || ++j && ++k);
+// printf("%d %d %d", i, j, k);
+
+// Calculation: (++i), i is incremented to 2
+// (++j) && (++k) is not evaluated due to short-circuiting, so j and k are both unchanged
+// Expression evaluates to 1(true) since i is an integer value
+// Answer: prints out 1
+// Answer: prints out 2 1 1 
+
+
+
+
+
+
+
+
+
+
+
+
+
