@@ -134,6 +134,30 @@ int main(void)
 
 
 
+// 5. Is the following if statement legal?
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+
+    if (n >= 1 <= 10) {
+        printf("n is between 1 and 10");
+    }
+
+    return 0;
+}
+
+// If so, what does it do when n is equal to 0?
+
+// Calculation: The expression is legal, but you read it as (n >= 1) <= 10. 
+// When n is equal to 0 it prints out 0(false), since (0 >= 1) is not true.
+// When the expression is simplified to (0 <= 10) is evaluated it prints out 1(true)
+// Answer: The expression is true, it prints out 1
+
+
+
 
 
 
