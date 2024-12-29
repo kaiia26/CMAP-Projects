@@ -218,7 +218,7 @@ int teenager, age;
 
 */
 
-// Answer: (age >= 13) ? teenager = true : (age <= 19) ? teenager = true : teenager = false );
+// Answer: (age >= 13 && age <= 19) ? 1 : 0);
 
 
 
