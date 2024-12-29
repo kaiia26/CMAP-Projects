@@ -155,6 +155,33 @@ int main(void)
 // When n is equal to 0 it prints out 0(false), since (0 >= 1) is not true.
 // When the expression is simplified to (0 <= 10) is evaluated it prints out 1(true)
 // Answer: The expression is true, it prints out 1
+// It will always print "n is between 1 an 10" even when n is 0
+
+
+
+// 6. Is the following if statement legal?
+
+#include <stdio.h>
+
+int main(void)
+{
+    int n;
+
+    if (n == 1-10) {
+        printf("n is between 1 and 10\n");
+    }
+
+    return 0;
+}
+
+
+// If so, what does it do when n is equal to 5?
+
+// Calculation: The expression is legal, but it prints out nothing.
+// Answer: (1-10) evaluates to -9; the expression is now n == -9
+// If n is set to 5, 5 == -9 is false (0)
+// Since the condition is false, the printf statement isn't executed
+
 
 
 
