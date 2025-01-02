@@ -222,12 +222,105 @@ int teenager, age;
 
 
 
+// 9. Are the following if statements equivalent? If not, why not?
+
+/*
+    if (score >= 90)
+        printf("A");
+    else if (score >= 80)
+        printf("B");
+    else if (score >= 70)
+        printf("C");
+    else if (score >= 60)
+        printf("D");
+    else
+        printf("F");
+
+    
+    if (score < 60)
+        printf("F");
+    else if (score < 70)
+        printf("D");
+    else if (score < 80)
+        printf("C");
+    else if (score < 90)
+        printf("B");
+    else
+        printf("A");
+
+*/
+
+// Answer: These if statements are not equivalent because the first statement's condition is greater than or equal too while the 
+// second statement's condition is less than. Because the first statement's condition is greater than or equal to, 
+// if the score is exactly 80 it will count as a "B" but in the second statement's condition if the score is exactly an 80 
+// it will be considered a "C", since the condition is only less than and not less than or equal to.
 
 
 
 
+// 10. What output does the following program fragment produce? (Assume that i is an integer variable)
+
+#include <stdio.h>
+
+int main(void)
+{
+    int i = 1;
+
+    switch (i % 3) {
+        case 0: printf("zero");
+        case 1: printf("one");
+        case 2: printf("two");
+
+    }
 
 
+
+    return 0;
+}
+
+
+// Answer: The following program produces the output onetwo
+// Explanation: This is because the value of 1%3 is 1, an the variable is matched against all possible cases. It is matched with case 1,
+// the output is "one", and since there is no break statement the program "falls through" to the next case,
+// thus continuing to print out until the last case statement, which is case 2 and prints out "two". Therefore the output is onetwo.
+
+
+
+// 11. Write a switch statement whose controlling expression is the variable area_code. If the value of area_code is in the table, the switch
+// statement will print the corresponding city name. Otherwise, the switch statement will display the message "Area code not recognized". 
+// Use the techniques described in Section 5.3 to make the switch statement as simple as possible
+
+#include <stdio.h>
+
+int main(void)
+{
+    int area_code;
+
+    printf("Enter area code: "); 
+    scanf("%d", &area_code);
+
+    switch(area_code) {
+        case 229:   printf("Albany");
+        break;
+        case 404: case 470: case 678: case 770: 
+        printf("Atlanta");
+        break;
+        case 478:   printf("Macon");
+        break;
+        case 706: case 762: 
+        printf("Columbus");
+        break;
+        case 912:   printf("Savannah");
+        break;
+        default:    printf("Area code not recognized");
+        break;
+
+    }
+
+    return 0;
+
+
+}
 
 
 
